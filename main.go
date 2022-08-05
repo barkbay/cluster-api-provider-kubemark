@@ -54,7 +54,7 @@ func main() {
 	var kubemarkImage string
 	flag.StringVar(&metricsAddr, "metrics-bind-addr", ":8080", "The address the metric endpoint binds to.")
 	// TODO (elmiko) update the following default image link when we have a home for the kubemark images
-	flag.StringVar(&kubemarkImage, "kubemark-image", "quay.io/elmiko/kubemark", "The location of the kubemark image")
+	flag.StringVar(&kubemarkImage, "kubemark-image", "docker.io/barkbay/kubemark", "The location of the kubemark image")
 	flag.BoolVar(&enableLeaderElection, "leader-elect", false,
 		"Enable leader election for controller manager. "+
 			"Enabling this will ensure there is only one active controller manager.")
